@@ -14,5 +14,6 @@ $stmt-> bindParam(":PASSWORD", $passoword);
 $stmt-> execute();
 
 echo "Dados cadastrados";
-teste 
+
+
  ?> 
