@@ -1,19 +1,15 @@
 <?php
  
- $conn = new PDO("mysql:dbname=hcode; host=127.0.0.1:3306","ANDERSON", "Passoword123#@!");  
+ $conn = new PDO("mysql:dbname=hcode; host=127.0.0.1:3306","anderson", "Anderson123#@!");  
+ $stmt = $conn->prepare("SELECT * FROM  tb_contats ORDER BY  deslogin");
+ $stmt->execute();
+ $result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 
- $stmt = $conn -> prepare("INSERT INTO tb_usuarios (deslogin, desenha) VALUES(:LOGIN, :PASSWORD)");
-
-$login = "anderson";
-$passoword = "123123"; 
-
-$stmt-> bindParam(":LOGIN", $login);
-
-$stmt-> bindParam(":PASSWORD", $passoword);
-
-$stmt-> execute();
-
-echo "Dados cadastrados";
-
-
- ?> 
+foreach ($result as $row)
+{ 
+  foreach ($row as $key => $value) { 
+      echo "<strong>".$key.":</strong>".$value."</br>"; 
+  }
+  echo "==================<br>";
+}
+?> 

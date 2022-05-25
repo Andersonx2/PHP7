@@ -3,7 +3,7 @@
 $nome = "anderson"; 
 
 function casa(){
-global $nome;
+    global $nome;
     echo $nome;
 
 }
@@ -11,7 +11,6 @@ global $nome;
 function casa2(){
 }
 
-
 casa();
 
-?> 
+?>

@@ -24,7 +24,6 @@
     ?>
     <article>
         <div class="calcular nota">
-
             <h1> Faça o calculo de notas, e verifique quem tirou a maior nota: </h1>
             <form action="" method="get">
 
@@ -36,10 +35,6 @@
                 Digite a primeira nota <input type="text" name="03"> </br>
                 <input type="submit" name="submit" value="Calcular">
             </form>
-
-
-
-
     </article>
 
     <?php
@@ -59,9 +54,6 @@
 
 
     ?>
-
-
-
 
 
 </body>

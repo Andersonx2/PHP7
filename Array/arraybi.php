@@ -15,7 +15,6 @@ array_push($pessoas, array (
     'idade' => 18
     
 ));
-
 print_r($pessoas )
     
 ?> 
